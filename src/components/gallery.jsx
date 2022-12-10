@@ -3,14 +3,14 @@ import ImageGallery from "react-image-gallery";
 import { Divider } from "antd";
 import styled from "styled-components";
 
-import GalleryPhoto1 from "../assets/yrphoto/gallary01.jpg";
-import GalleryPhoto2 from "../assets/yrphoto/gallary02.jpg";
-import GalleryPhoto3 from "../assets/yrphoto/gallary03.jpg";
-import GalleryPhoto4 from "../assets/yrphoto/gallary04.jpg";
-import GalleryPhoto5 from "../assets/yrphoto/gallary05.jpg";
-import GalleryPhoto6 from "../assets/yrphoto/gallary06.jpg";
-import GalleryPhoto7 from "../assets/yrphoto/gallary07.jpg";
-import GalleryPhoto8 from "../assets/yrphoto/gallary08.jpg";
+import GalleryPhoto1 from "../assets/yrphoto_comp/gallary01.jpg";
+import GalleryPhoto2 from "../assets/yrphoto_comp/gallary02.jpg";
+import GalleryPhoto3 from "../assets/yrphoto_comp/gallary03.jpg";
+import GalleryPhoto4 from "../assets/yrphoto_comp/gallary04.jpg";
+import GalleryPhoto5 from "../assets/yrphoto_comp/gallary05.jpg";
+import GalleryPhoto6 from "../assets/yrphoto_comp/gallary06.jpg";
+import GalleryPhoto7 from "../assets/yrphoto_comp/gallary07.jpg";
+import GalleryPhoto8 from "../assets/yrphoto_comp/gallary08.jpg";
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -66,7 +66,7 @@ const Gallery = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
-        <Title>우리의 아름다운 순간</Title>
+        <Title>Gallery</Title>
       </Divider>
       <ImageGallery
         showPlayButton={false}

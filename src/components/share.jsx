@@ -117,16 +117,7 @@ const Share = () => {
       >
         카카오톡으로 공유하기
       </KakaoTalkShareButton>
-      <CopyToClipboard text={WEDDING_INVITATION_URL}>
-        <LinkShareButton
-          style={{ margin: 0 }}
-          icon={<LinkOutlined />}
-          size="large"
-          onClick={() => message.success("청첩장 링크가 복사되었습니다.")}
-        >
-          링크로 공유하기
-        </LinkShareButton>
-      </CopyToClipboard>
+
     </Wrapper>
   );
 };

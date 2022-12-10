@@ -8,12 +8,13 @@ import Greeting from "../components/greeting";
 import Title from "../components/title";
 import "../styles/index.css";
 
-import GroovePaper from "../assets/GroovePaper.png";
+// import GroovePaper from "../assets/GroovePaper.png";
+import GroovePaper from "../assets/glitter5.png";
 import Location from "../components/location";
 import CongratulatoryMoney from "../components/congratulatoryMoney";
 import Share from "../components/share";
 import Quote from "../components/quote";
-import Song from "../assets/song.mp3";
+import Song from "../assets/song2.mp3";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,7 +23,7 @@ import "aos/dist/aos.css";
 const { Footer } = Layout;
 
 const Wrapper = styled.div`
-  background: #efebe9;
+  background: #fafafa;
   background-image: url(${GroovePaper});
   width: 100%;
 `;
@@ -35,7 +36,7 @@ const IndexPage = () => {
     document.body.appendChild(script);
 
     return () => {
-      document.body.romoveChile(script);
+      document.body.removeChild(script);
     };
   }, []);
 
@@ -64,7 +65,7 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        Copyright © 2022 Shin Jooyoung
+        kihun um pikachom@gmail.com
       </Footer>
     </Wrapper>
   );

@@ -57,7 +57,6 @@ const Greeting = () => {
       <Divider style={{ marginTop: 32, marginBottom: 32 }} plain>
         <Title data-aos="fade-up">초대합니다</Title>
       </Divider>
-      <Image data-aos="fade-up" src={Flower} />
       <Content data-aos="fade-up">
         서로 마주 보며 다져온 사랑을
         <br />

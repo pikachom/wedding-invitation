@@ -6,9 +6,9 @@ import {
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
-import GroovePaper from "../assets/GroovePaper.png";
-import Flower from "../assets/flower1.png";
-import MainPhoto from "../assets/yrphoto/main.jpg"
+
+import MainPhoto from "../assets/yrphoto_comp/main.jpg"
+import InvitationWord from "../assets/invitation.png"
 import {Image} from "antd";
 
 const Layout = styled.div`
@@ -37,6 +37,8 @@ const WeddingInvitation = styled.p`
   font-size: 0.825rem;
   opacity: 0.45;
   margin-bottom: 16px;
+  color: #d6ce31;
+  border-radius: 1px;
 `;
 
 const GroomBride = styled.p`
@@ -44,18 +46,26 @@ const GroomBride = styled.p`
   font-weight: bold;
   opacity: 0.9;
   margin-bottom: 16px;
+  color: black;
 `;
 
 const Schedule = styled.p`
   font-size: 1.06rem;
   opacity: 0.65;
   margin-bottom: 24px;
+  color: black;
 `;
 const Title = () => {
   return (
     <Layout>
       <TitleWrapper>
-        <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
+        <br/>
+        <br/>
+        <br/>
+        <Image src={InvitationWord} preview={false}></Image>
+        <br/>
+        <br/>
+
         <GroomBride>
           {GROOM_NAME} &#38; {BRIDE_NAME}
         </GroomBride>
@@ -65,7 +75,7 @@ const Title = () => {
           {WEDDING_LOCATION}
         </Schedule>
       </TitleWrapper>
-        <Image src={MainPhoto} />
+        <Image src={MainPhoto} preview={false} />
     </Layout>
   );
 };
