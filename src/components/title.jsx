@@ -6,8 +6,10 @@ import {
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4";
 import GroovePaper from "../assets/GroovePaper.png";
+import Flower from "../assets/flower1.png";
+import MainPhoto from "../assets/yrphoto/main.jpg"
+import {Image} from "antd";
 
 const Layout = styled.div`
   width: 70%;
@@ -63,9 +65,7 @@ const Title = () => {
           {WEDDING_LOCATION}
         </Schedule>
       </TitleWrapper>
-      <VideoBackground autoPlay loop muted playsInline={true}>
-        <source src={BackgroundVideo} type="video/mp4" />
-      </VideoBackground>
+        <Image src={MainPhoto} />
     </Layout>
   );
 };

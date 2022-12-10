@@ -47,8 +47,8 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1652464367301",
-    "key" : "2a8fe",
+    "timestamp" : "1670676028541",
+    "key" : "2cxk8",
     "mapWidth" : "640",
     "mapHeight" : "360"
   }).render();`);
@@ -99,27 +99,29 @@ const Location = () => {
       </Divider>
       <Image src={Flower} />
       <Map
-        id="daumRoughmapContainer1652464367301"
+        id="daumRoughmapContainer1670676028541"
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        대구 수성구 두산동 888-2번지
+        수원시 팔달구 팔달문로 128(우만동 549번지)
         <br />
-        호텔수성 수성스퀘어 3층 피오니홀
+        수원노블레스웨딩컨벤션 7층 컨벤션홀
         <br />
         <br />
         <Title>버스 이용시</Title>
         <br />
         <br />
-        410-1, 401 호텔수성 앞 하차
+        수원역(4번출구) -> 동수원병원 하차 10, 11-1, 37, 720-2, 83-1 (도보 10분)
         <br />
-        수성1-1, 수성3-1, 814 TBC방송국 앞 하차
+        수원종합버스터미널 -> 수병원 하차 300, 300-1, 82-1, 80, 88
+        <br />
+        서수원시외버스터미널 -> 동수원병원 하차 11-1, 37, 61, 62-1 (도보 10분)
+        <br />
+        강남역(7번출구) -> 월드컵경기장 하차 3002, 3007, 3008 (도보 10분)
         <br />
         <br />
-        <Title>지하철 이용시</Title>
         <br />
-        <br />
-        3호선 수성못역 하차 (도보 10분)
+
       </Content>
     </Wrapper>
   );
